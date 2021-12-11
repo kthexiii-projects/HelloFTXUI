@@ -5,5 +5,6 @@ workspace 'HelloFTXUI'
   }
 
 -- Include projects
+include 'Vendor/premake5.ftxui.lua'
 include 'HelloFTXUI'
 

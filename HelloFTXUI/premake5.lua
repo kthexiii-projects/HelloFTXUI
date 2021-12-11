@@ -24,9 +24,12 @@ project 'HelloFTXUI'
 
   includedirs {
     'src',
+    FTXUI_INCLUDE,
   }
 
-  links {}
+  links {
+    'FTXUI'
+  }
 
   filter {'not system:windows'}
     buildoptions {
