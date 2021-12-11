@@ -100,6 +100,14 @@ project 'FTXUI'
   filter 'system:windows'
     system 'windows'
 
+    buildoptions {
+      '/W3',
+      '/WX',
+      '/wd4244',
+      '/wd4267',
+      '/D_CRT_SECURE_NO_WARNINGS',
+    }
+
   filter 'configurations:debug'
     symbols 'On'
 
